@@ -58,6 +58,7 @@ public class HabitacionesController {
     
 
     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean delete(@PathVariable("id") int id) {
         return habitacionesService.deleteHabitaciones(id);
     }
