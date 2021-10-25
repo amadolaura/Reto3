@@ -46,34 +46,66 @@ public class Client implements Serializable{
     public List<Reservations> reservations;
     
 
+    /**
+     * 
+     * @return 
+     */
     public List<Reservations> getReservations() {
         return reservations;
     }
 
+    /**
+     * 
+     * @param reservations 
+     */
     public void setReservations(List<Reservations> reservations) {
         this.reservations = reservations;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public List<Messages> getMessages() {
         return messages;
     }
 
+    /**
+     * 
+     * @param messages 
+     */
     public void setMessages(List<Messages> messages) {
         this.messages = messages;
     }
   
+    /**
+     * 
+     * @return 
+     */
     public Integer getIdClient() {
         return idClient;
     }
 
+    /**
+     * 
+     * @param idClient 
+     */
     public void setIdClient(Integer idClient) {
         this.idClient = idClient;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getEmail() {
         return email;
     }
 
+    /**
+     * 
+     * @param email 
+     */
     public void setEmail(String email) {
         this.email = email;
     }

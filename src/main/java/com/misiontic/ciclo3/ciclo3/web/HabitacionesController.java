@@ -57,6 +57,7 @@ public class HabitacionesController {
     }
     
 
+    //asignar la solicitud al método de eliminación
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean delete(@PathVariable("id") int id) {
