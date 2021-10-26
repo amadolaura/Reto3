@@ -60,6 +60,9 @@ public class ClientController {
     //asignar la solicitud al método de eliminación
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
+    /**
+     * 
+     */
     public boolean delete(@PathVariable("id") int id) {
         return clientService.deleteClient(id);
     }

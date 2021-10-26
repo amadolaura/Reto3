@@ -58,6 +58,9 @@ public class MessageController {
     //asignar la solicitud al método de eliminación
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
+    /**
+     * 
+     */
     public boolean delete(@PathVariable("id") int id) {
         return messageService.deleteMessage(id);
     }
